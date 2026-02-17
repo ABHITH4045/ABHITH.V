@@ -1,5 +1,5 @@
 {
-  "name": "Copy of LifeGuard Emergency Connect",
+  "name": "EMERGENCY ALERT",
   "description": "An AI-powered emergency detection system that utilizes mobile sensors to detect accidents and automatically alert family and ambulance services via AI-optimized messaging.",
   "requestFramePermissions": [
     "geolocation"

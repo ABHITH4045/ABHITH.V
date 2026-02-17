@@ -18,6 +18,8 @@ export interface AccidentData {
   latitude: number | null;
   longitude: number | null;
   gForce: number;
+  forceX: number;
+  forceY: number;
 }
 
 export interface AlertMessages {
@@ -25,9 +27,15 @@ export interface AlertMessages {
   ambulance: string;
 }
 
+export enum TriggerReason {
+  IMPACT = 'IMPACT',
+  MOVEMENT = 'MOVEMENT'
+}
+
 export enum AppState {
   REGISTRATION = 'REGISTRATION',
   MONITORING = 'MONITORING',
   ALERT_COUNTDOWN = 'ALERT_COUNTDOWN',
-  ALERT_SENT = 'ALERT_SENT'
+  ALERT_SENT = 'ALERT_SENT',
+  CONFIRMATION = 'CONFIRMATION'
 }
